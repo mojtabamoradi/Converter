@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Converter\Converter.csproj" />
+    <PackageReference Include="Moraba.Converter.Core" Version="1.0.1" />
   </ItemGroup>
 
 </Project>
