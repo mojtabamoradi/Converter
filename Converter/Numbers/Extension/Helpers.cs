@@ -2,11 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text; 
+using System.Text;
 
 namespace Moraba.Converter.Numbers.Extension
 {
-   public static class Helpers
+    public static class Helpers
     {
         public static string ConvertPersianNumberToEnglishNumber(this string numbers)
         {
@@ -55,8 +55,10 @@ namespace Moraba.Converter.Numbers.Extension
         {
             if (String.IsNullOrEmpty(input) || String.IsNullOrWhiteSpace(input)) { return false; }
             input = input.Trim();
-            if (input.Where(c => !char.IsDigit(c) && c != '.').Count() > 0) { return false; }
+            if (input.Where(c => !char.IsDigit(c) && c != '.' && c != '-').Count() > 0) { return false; }
             if (input.Where(c => c == '.').Count() > 1) { return false; }
+            if (input.Where(c => c == '-').Count() > 1) { return false; }
+            if (input.Contains('-') && !input.StartsWith('-')) { return false; }
             return true;
         }
 
@@ -65,5 +67,6 @@ namespace Moraba.Converter.Numbers.Extension
             if (!IsNumber(input)) { return false; }
             if (input.Where(c => c == '.').Count() > 0) { return false; }
             return true;
-        }    }
+        }
+    }
 }

@@ -4,21 +4,22 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>Moraba.Converter</AssemblyName>
     <RootNamespace>Moraba.Converter</RootNamespace>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
     <PackageId>Moraba.Converter.Core</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Mojtaba Moradi (mojtabamoradi.net@outlook.com)</Authors>
     <Product>Moraba.Converter.Core</Product>
     <Description>Moraba Converter is a simple and light converter for use in .NET projects.
-This version is for numbers conversion only [1.0.1].
+This version is for numbers conversion only [1.0.2].
 Hope it will be useful.</Description>
     <Copyright>Mojtaba Moradi (mojtabamoradi.net@outlook.com) @ 2019</Copyright>
     <PackageProjectUrl>https://github.com/mojtabamoradi/converter</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mojtabamoradi/converter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>.net,.netcore,converter,number convert,persian number</PackageTags>
-    <PackageReleaseNotes>This version is for numbers conversion only [1.0.1].</PackageReleaseNotes>
+    <PackageTags>.net,.netcore,converter,number convert,persian number,persian to english,english to persian</PackageTags>
+    <PackageReleaseNotes>This version is for numbers conversion only [1.0.2].
+Negative number conversion was also added.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIconUrl>https://raw.githubusercontent.com/mojtabamoradi/converter/master/Converter/logo.png</PackageIconUrl>
   </PropertyGroup>
